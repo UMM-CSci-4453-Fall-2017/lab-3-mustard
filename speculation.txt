@@ -1,4 +1,8 @@
-Inventory can be tracked by updating the database when new products are shipped to the store (noting what products are ordered and their amounts), and likewise what products and how many are sold at the register. Inventory can also be verified by periodically counting the amounts of products both in storage and on shelves using a barcode scan gun.
+Inventory can be tracked by updating the database when new products are shipped to the store 
+(noting what products are ordered and their amounts), and likewise what 
+products and how many are sold at the register. 
+Inventory can also be verified by periodically counting the amounts of 
+products both in storage and on shelves using a barcode scan gun.
 
 We think it would be useful for the system to keep track of vendors, but it may not be an essential feature of the database. But it could help with consistency and accountability if there is a problem with a shipment.
 
