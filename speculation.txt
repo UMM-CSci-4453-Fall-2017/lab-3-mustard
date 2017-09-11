@@ -1,0 +1,22 @@
+Inventory can be tracked by updating the database when new products are shipped to the store (noting what products are ordered and their amounts), and likewise what products and how many are sold at the register. Inventory can also be verified by periodically counting the amounts of products both in storage and on shelves using a barcode scan gun.
+
+We think it would be useful for the system to keep track of vendors, but it may not be an essential feature of the database. But it could help with consistency and accountability if there is a problem with a shipment.
+
+For cash registers, we think it should be necessary for the system to require appropriate credentials to be able to use the registers, and it could be helpful to keep track of the time an employee is logged into the register so that an employee can’t be logged into 2 registers at the same time for instance. 
+
+We think it would be unnecessary to keep track of the total amount of time a transaction took, however it could be helpful to note when a transaction started or ended. It may be beneficial to know the average transaction time to make innovations to the registers, but it would be a poor indicator of individual performance of cashiers. Likewise, an upselling system could also be included in the database but would probably need to be actively maintained for it to continue to work for new items so it might be more hassle than it is worth.
+
+If possible, we think items should generally be sold by unit. Different volumes or sizes of the same product would be treated as separate products in the database, and their amounts would be stored in discrete units rather than measurements. Items such as produce or meat may require a measurement of weight to determine their price, so the storage of their amounts may need to be handled in a different table. Perhaps the departments of the store can be separated into different tables to handle this issue.
+
+Items sold as part of a combination deal should not be considered a “new” single product in the database but instead should have their individual values simultaneously updated to reflect when they are sold. Revenue should be calculated based on the actual transaction values from the register rather than the listed price in the database to account for combo deals, sales, coupons, and promotional offers. The database should keep a record of which transactions take advantage of these offers because it could be useful data for the company.
+
+Refunds should perhaps only be accepted for a limited amount of time (unless overrided by a supervisor). The product may need to be discarded after it is returned, but could also potentially be returned to the inventory. In the former case, the database could maybe void the original sale but keep the product subtracted from the inventory, or just subtract from revenue.
+
+There could also be a table in the database for handling damaged items. Minor mistakes could be corrected by register or stock employees, more major ones might require a supervisor (or at least notify them of large or unexpected changes).
+
+We think tills should be allowed to operate if the local network goes down to ensure that the business can still make revenue. This would mean that data about the transactions that occurred at particular tills is stored on those tills until the network is reconnected or until a fixed time when all tills would upload their data. In contrast, the server should include more comprehensive information about all of the transactions from the tills, such as revenue and updates to the inventory.
+
+	
+ 
+	
+
