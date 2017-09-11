@@ -4,6 +4,6 @@ Team name = Mustard
 
 Team members:
 Tsz Hong Lau (Andy)
-Rochern de Jongh
+Rocherno de Jongh
 Kyle Foss
 Colin Rabe
